@@ -22,7 +22,6 @@ class ExceptionListener
                 'message' => $exception->getMessage()
             ]);
         } else {
-            // Internal Server Error
             $response->setStatusCode(500);
             $response->setData([
                 'status' => 500,
